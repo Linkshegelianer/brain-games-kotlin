@@ -1,4 +1,5 @@
 # Brain games (Kotlin)
+[![Maintainability](https://api.codeclimate.com/v1/badges/ae85cb09a5f64f592f64/maintainability)](https://codeclimate.com/github/Linkshegelianer/brain-games-kotlin/maintainability) [![Java CI](https://github.com/Linkshegelianer/brain-games-kotlin/workflows/Kotlin%20CI/badge.svg)](https://github.com/Linkshegelianer/brain-games-kotlin/actions/workflows/kotlin-ci.yml)
 
 This repository contains a small math-based application called "Brain games". This is a reference to my very [first project](https://github.com/Linkshegelianer/brain-games) written in Java, which I decided to rewrite in Kotlin.
 

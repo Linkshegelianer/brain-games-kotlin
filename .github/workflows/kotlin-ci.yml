@@ -22,3 +22,6 @@ jobs:
         with:
           arguments: build
           build-root-directory: app
+
+      - run: chmod +x app/gradlew
+      - run: make -C app build

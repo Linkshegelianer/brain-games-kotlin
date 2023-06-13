@@ -1,6 +1,6 @@
 package code
 
-import code.games.Calc
+import code.games.*
 import java.util.Scanner
 
 class App {
@@ -18,7 +18,12 @@ class App {
 fun main() {
     println("Please enter the game number and press Enter.")
     println("1 - Greet")
-    println("3 - Calc ")
+    println("2 - Even")
+    println("3 - Calc")
+    println("4 - GCD")
+    println("5 - Progression")
+    println("6 - Prime")
+    println("0 - Exit")
     print("Your choice: ")
     val console = Scanner(System.`in`)
     val response = console.nextLine()
@@ -28,9 +33,29 @@ fun main() {
             greet.greet()
         }
 
+        App.EVEN -> {
+            val even = Even()
+            even.start()
+        }
+
         App.CALC -> {
             val calc = Calc()
             calc.start()
+        }
+
+        App.GCD -> {
+            val gcd = Gcd()
+            gcd.start()
+        }
+
+        App.PROGRESSION -> {
+            val prog = Prog()
+            prog.start()
+        }
+
+        App.PRIME -> {
+            val prime = Prime()
+            prime.start()
         }
 
         App.EXIT -> println("Bye!")

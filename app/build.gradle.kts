@@ -1,26 +1,26 @@
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.8.10" // <1>
+    id("org.jetbrains.kotlin.jvm") version "1.8.10"
 
-    application // <2>
+    application
 }
 
 repositories {
-    mavenCentral() // <3>
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5") // <4>
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.1") // <5>
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.1")
 
-    implementation("com.google.guava:guava:31.1-jre") // <6>
+    testImplementation("org.mockito:mockito-core:3.12.4")
 }
 
 application {
-    mainClass.set("code.AppKt") // <7>
+    mainClass.set("code.AppKt")
 }
 
 tasks.named<Test>("test") {
-    useJUnitPlatform() // <8>
+    useJUnitPlatform()
 }
